@@ -1,0 +1,29 @@
+{
+  "name": "browser-switch-extension",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p --mode=production",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch --mode=development"
+  },
+  "dependencies": {
+    "data.task": "^3.1.1",
+    "folktale": "^2.1.0",
+    "js-base64": "^2.4.3",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "BrowserSwitch",
+  "version": "1.0.0",
+  "description": "Send links or tabs to other browsers. Requires desktop app.",
+  "author": "Mariano Cavallo",
+  "homepage_url": "https://github.com/mcavallo/browser-switch-extension",
+  "background": {
+    "scripts": [
+      "background.bundle.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "BrowserSwitch"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "permissions": [
+    "tabs",
+    "contextMenus"
+  ],
+  "icons": {
+    "512": "icons/browserSwitch_512x512.png"
+  }
+}
